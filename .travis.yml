@@ -19,6 +19,13 @@ matrix:
       dist: xenial
     - python: 3.8
       dist: xenial
+      #PPC64LE
+    - python: 3.6
+      env: TOXENV=lint
+      arch: ppc64le
+    - python: 3.8
+      dist: xenial
+      arch: ppc64le
 
 cache:
   directories:
